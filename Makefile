@@ -2,7 +2,7 @@
 NAME				= push_swap
 
 # Directories
-LIBFT				= ./libft/libft.a
+LIBFT				= ./Libft/libft.a
 INC					= inc/
 SRC_DIR				= srcs/
 OBJ_DIR				= obj/
@@ -39,7 +39,7 @@ start:
 					@make all
 
 $(LIBFT):
-					@make -C ./libft
+					@make -C ./Libft
 
 all: 				$(NAME)
 
@@ -53,7 +53,7 @@ $(OBJ_DIR)%.o:		$(SRC_DIR)%.c
 
 clean:
 					@$(RM) -r $(OBJ_DIR)
-					@make clean -C ./libft
+					@make clean -C ./Libft
 
 fclean: 			clean
 					@$(RM) $(NAME)

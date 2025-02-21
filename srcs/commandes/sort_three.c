@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:28:06 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/18 11:02:02 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/02/21 12:38:34 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	sort_three(t_stack_node **a)
 {
-    t_stack_node	*biggest_node;
+	t_stack_node	*biggest_node;
 
-    biggest_node = find_max(*a);
-    if (biggest_node == *a)
-        ra(a, false);
-    else if ((*a)->next == biggest_node)
-        rra(a, false);
-    if ((*a)->nbr > (*a)->next->nbr)
-        sa(a, false);
+	biggest_node = find_max(*a);
+	if (biggest_node == *a)
+		ra(a, false);
+	else if ((*a)->next == biggest_node)
+		rra(a, false);
+	if ((*a)->nbr > (*a)->next->nbr)
+		sa(a, false);
 }

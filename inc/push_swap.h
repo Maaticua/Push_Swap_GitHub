@@ -6,13 +6,12 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:24:30 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/18 11:57:36 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/02/21 15:50:00 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-
 
 # include "../Libft/inc/libft.h"
 
@@ -21,7 +20,6 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
-
 
 typedef struct s_stack_node
 {
