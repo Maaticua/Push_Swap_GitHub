@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:24:30 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/21 15:50:00 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/02/24 15:01:08 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,17 @@ void			pb(t_stack_node **b, t_stack_node **a, bool print);
 //***Algorithm
 void			sort_three(t_stack_node **a);
 void			sort_stacks(t_stack_node **a, t_stack_node **b);
+
+void	rotate_both(t_stack_node **a,
+						t_stack_node **b,
+						t_stack_node *cheapest_node);
+
+void	rev_rotate_both(t_stack_node **a,
+							t_stack_node **b,
+							t_stack_node *cheapest_node);
+
+void	move_a_to_b(t_stack_node **a, t_stack_node **b);
+void	move_b_to_a(t_stack_node **a, t_stack_node **b);
+void	min_on_top(t_stack_node **a);
 
 #endif
