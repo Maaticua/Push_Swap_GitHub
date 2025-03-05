@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:24:30 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/24 15:01:08 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/02/28 16:09:51 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void			free_errors(t_stack_node **a);
 
 //***Stack initiation
 void			init_stack_a(t_stack_node **a, char **argv);
-char			**split(char *s, char c);
+char			**ft_spesplit(char *s, char c);
 
 //***Nodes initiation
 void			init_nodes_a(t_stack_node *a, t_stack_node *b);

@@ -24,7 +24,7 @@ PUSH_SWAP_DIR		=	$(SRC_DIR)push_swap/handle_errors.c \
 						$(SRC_DIR)push_swap/init_a_to_b.c \
 						$(SRC_DIR)push_swap/init_b_to_a.c \
 						$(SRC_DIR)push_swap/push_swap.c \
-						$(SRC_DIR)push_swap/split.c \
+						$(SRC_DIR)push_swap/ft_spesplit.c \
 						$(SRC_DIR)push_swap/stack_init.c \
 						$(SRC_DIR)push_swap/stack_utils.c
 
