@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 11:55:13 by macaruan          #+#    #+#             */
-/*   Updated: 2025/03/10 12:54:12 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/03/11 13:26:05 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,10 @@ int	main(int argc, char **argv)
 		argv = split_argv;
 	}
 	if (init_stack_a(&a, argv + 1) == -1)
+	{
+		ft_printf("%s", "Error\n");
 		free_stack(&a);
+	}
 	if (!stack_sorted(a))
 		process_stack(&a, &b);
 	free_stack(&a);
