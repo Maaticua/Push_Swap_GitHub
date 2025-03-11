@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 11:55:26 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/18 13:37:13 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/03/10 13:27:55 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ static long	ft_atol(const char *s)
 
 	result = 0;
 	sign = 1;
-	while (*s == ' ' || *s == '\t' || *s == '\n' || \
-			*s == '\r' || *s == '\f' || *s == '\v')
+	while (*s == ' ' || *s == '\t' || *s == '\n' || *s == '\r' || *s == '\f'
+		|| *s == '\v')
 		s++;
 	if (*s == '-' || *s == '+')
 	{
@@ -59,7 +59,7 @@ static void	append_node(t_stack_node **stack, int n)
 	}
 }
 
-void	init_stack_a(t_stack_node **a, char **argv)
+int	init_stack_a(t_stack_node **a, char **argv)
 {
 	long	n;
 	int		i;
@@ -68,15 +68,16 @@ void	init_stack_a(t_stack_node **a, char **argv)
 	while (argv[i])
 	{
 		if (error_syntax(argv[i]))
-			free_errors(a);
+			return (-1);
 		n = ft_atol(argv[i]);
 		if (n > INT_MAX || n < INT_MIN)
-			free_errors(a);
+			return (-1);
 		if (error_duplicate(*a, (int)n))
-			free_errors(a);
+			return (-1);
 		append_node(a, (int)n);
 		i++;
 	}
+	return (0);
 }
 
 t_stack_node	*get_cheapest(t_stack_node *stack)
@@ -92,9 +93,8 @@ t_stack_node	*get_cheapest(t_stack_node *stack)
 	return (NULL);
 }
 
-void	prep_for_push(t_stack_node **stack,
-						t_stack_node *top_node,
-						char stack_name)
+void	prep_for_push(t_stack_node **stack, t_stack_node *top_node,
+		char stack_name)
 {
 	while (*stack != top_node)
 	{

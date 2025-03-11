@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:28:04 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/24 15:00:46 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/03/05 12:27:48 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,3 @@ void	min_on_top(t_stack_node **a)
 			rra(a, false);
 	}
 }
-
-

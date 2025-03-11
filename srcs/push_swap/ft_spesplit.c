@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_spesplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 11:55:21 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/28 16:08:49 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/03/10 12:53:49 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,8 @@ static char	*get_next_word(char *s, char c)
 char	**ft_spesplit(char *s, char c)
 {
 	int		words_count;
-	char	**result_array;
 	int		i;
+	char	**result_array;
 
 	i = 0;
 	words_count = count_words(s, c);

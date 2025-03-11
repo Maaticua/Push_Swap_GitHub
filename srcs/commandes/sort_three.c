@@ -6,7 +6,7 @@
 /*   By: macaruan <macaruan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 19:28:06 by macaruan          #+#    #+#             */
-/*   Updated: 2025/02/24 14:56:18 by macaruan         ###   ########.fr       */
+/*   Updated: 2025/03/05 12:28:00 by macaruan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	sort_three(t_stack_node **a)
 	if ((*a)->nbr > (*a)->next->nbr)
 		sa(a, false);
 }
+
 void	sort_stacks(t_stack_node **a, t_stack_node **b)
 {
 	int	len_a;
